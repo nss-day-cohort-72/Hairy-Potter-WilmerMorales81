@@ -120,12 +120,12 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > I got the correct data using the usePottery function which returns all the pottery items for sale then the PotteryList function converted each object in the array to an HTML representation string and finally I used the querySelector method to get the tag article and assigned the HTML string to its innerHTML.
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/88fe3d37019a40bbb0fdfa6434cdeecd
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > The PotteryWheel module is responsible only for the creation of pottery pieces, allowing other modules to handle other specific functionalities, the PotteryWheel module could be reused in another context where pottery objects need to be created, any change in this process is isolated and will not affect other functionalities.
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > We need to add on the toSellOrNotToSell function in the if (!potteryObject.cracked) an else statement then add the key price to a new object with price value of $ 2.50.
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/8a9b869ce2964f61af2a51430c6cfdd1

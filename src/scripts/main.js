@@ -1,8 +1,8 @@
 // Imports go first
-import { toSellOrNotToSell, usePottery } from './scripts/PotteryCatalog.js';
-import { makePottery } from './scripts/PotteryWheel.js';
-import { firePottery } from './scripts/kiln.js';
-import { PotteryList } from './scripts/PotteryList.js';
+import { toSellOrNotToSell, usePottery } from './PotteryCatalog.js';
+import { makePottery } from './PotteryWheel.js';
+import { firePottery } from './kiln.js';
+import { PotteryList } from './PotteryList.js';
 
 
 
@@ -56,5 +56,5 @@ console.log(ToSalePlate);
 const pricedItems = usePottery();
 const ListConvertHTML = PotteryList(pricedItems);
 
-const ListHTML = document.getElementByClass("potteryList");
+const ListHTML = document.querySelector('.potteryList');
 ListHTML.innerHTML = ListConvertHTML;
